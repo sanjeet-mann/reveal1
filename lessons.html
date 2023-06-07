@@ -31,7 +31,7 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/night.css" id="theme">
 </head>
 <body>
   <div class="reveal">
@@ -92,8 +92,8 @@ class="slide level1">
 <p>“Efforts to gain a social justice mindset and to understand issues of
 Diversity, Equity and Inclusion (DEI) take time, effort and resources.
 They must be nurtured and given attention.”</p>
-</blockquote>
 <p>Monroe-Gulick and Morris 2023, p. 18</p>
+</blockquote>
 </section>
 <section id="outcomes" class="slide level1">
 <h1>Outcomes</h1>
@@ -112,8 +112,8 @@ over investing in collective effort among libraries and are part and
 parcel of a larger dynamic of business logic within higher education
 that privileges demand and immediate need over long-term support for
 scholarship and equity.”</p>
-</blockquote>
 <p>Jahnke, Tanaka and Palazzolo 2022, p. 179</p>
+</blockquote>
 </section>
 <section id="references-1-of-2" class="slide level1">
 <h1>References (1 of 2)</h1>
@@ -213,7 +213,7 @@ https://zora.medium.com/100-best-books-by-black-women-authors-zora-canon-46b3492
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: true,
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -341,6 +341,12 @@ https://zora.medium.com/100-best-books-by-black-women-authors-zora-canon-46b3492
           RevealSearch,
           RevealZoom
         ]
+		
+		// adds reveal.js-toolbar as a dependency
+		dependencies: [
+		{ src: 'plugins/toolbar/toolbar.js' }
+		]
+		
       });
     </script>
     </body>
