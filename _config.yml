@@ -1,0 +1,8 @@
+title: Sanjeet Mann - presentation slides
+description: Reveal.js presentation slides
+domain: sanjeet-mann.github.io
+url: https://sanjeet-mann.github.io
+baseurl: /slides/
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme 
