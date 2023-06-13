@@ -89,7 +89,7 @@
 			  </section>
 			  <section>
 			  <h2>OpenURL performance</h2>
-			  <p><img style="float:left;" data-src="img/availability-csun" /></p>
+			  <p><img style="float:left;" data-src="img/availability-csun.png" /></p>
 			  <p><ul>
 			  <li>OpenURL-based reasons for availability error (Wakimoto et al 1998)</li>
 			  <li>"Digging into the Data" on link resolver failure (Trainor and Price 2010)</li>
@@ -101,7 +101,7 @@
 			</section>
 			<section>
 			<h2>Usability studies focusing on e-resources</h2>
-			<p style="float:left;" data-src="img/availability-bgsu" /></p>
+			<p style="float:left;" data-src="img/availability-bgsu.png" /></p>
 			<p><ul>
 			<li>Database link pages (Fry 2011, Ponsford et al 2011b)</li>
 			<li>Resolver menus (O'Neill 2009, Imler & Eichelberger 2011, Ponsford et al 2011a)</li>
@@ -114,19 +114,19 @@
 			</section>
 			<section>
 			<h2>Methodology</h2>
-			<p><img data-src="img/availability-methodology" /></p>
+			<p><img data-src="img/availability-methodology.png" /></p>
 			<aside class="notes">
 			<p>I collected a sample of 400 citations in the following manner:​</p>
 			<p><ol>
 			<li>I identified 10 academic disciplines where we had an abstracting and indexing database​</li>
 			<li>I searched our Libstats reference desk software to find four student reference questions for each discipline (40 questions total)​</li>
-			<li>I searched the topics in the corresponding A&I databases and tested the first 10 results of each search for full text access (400 citations total)​</li>
+			<li>I searched the topics in the corresponding A&I databases and tested the first 10 results of each search for full text access (400 citations total)​</li></ol>
 			<p>I did not modify the default sort order or browse to subsequent result screens in order to more accurately simulate student research behavior)​</p>
 			</aside>
 			</section>
 			<section>
 			<h2>Link testing</h2>
-			<p><img data-src="img/availability-link-testing" /></p>
+			<p><img data-src="img/availability-link-testing.png" /></p>
 			<aside class="notes">
 			<p>For each of the 400 items tested, I recorded bibliographic metadata in an Excel spreadsheet archived at http://works.bepress.com/sanjeet_mann/1/​ I also collected “incoming” (from source A&I database to link resolver, see yellow “find full text” link in screenshot) and “outbound” (from link resolver to target full text database, see red circles in screen shot) OpenURLs for each item and pasted them into the spreadsheet. I categorized each item as available or erroneous. After testing all items, I went back and assigned a category of error to each unavailable item. ​</p>
 			</aside>
@@ -137,11 +137,30 @@
 			<li>What is an error?</li>
 			<li>Six error categories</li>
 			<li>Updated criteria</li>
-			<p style="float:right;"><img data-src="img/availability-error-coding" /></p>
-			<aside class="notes">Error categories require judgment calls on the part of the investigator. Many errors (such as incorrect publisher metadata) are not evident at their point of origin, only detectable by problems that occur later in the retrieval process.​ I developed six error categories roughly matching the five systems involved in e-resource retrieval. The next seven slides present an overview of the categories and examples of common errors of each type.​ The availability and openURL-testing literature contains some discussion of what constitutes an unavailable or erroneous resource. I chose to treat ILL requests as a normal part of the retrieval process, rather than as a failure of the library to obtain all items a user might need (something which is no longer possible even for libraries with the most comprehensive collection development policies) I also specified that each item must link directly to a screen providing HTML or PDF full text; screens such as the one pictured here where the link leads to a list of items could confuse students, so I counted it as an error.​</p>
+			<p style="float:right;"><img data-src="img/availability-error-coding.png" /></p>
+			<aside class="notes"><p>Error categories require judgment calls on the part of the investigator. Many errors (such as incorrect publisher metadata) are not evident at their point of origin, only detectable by problems that occur later in the retrieval process.​ I developed six error categories roughly matching the five systems involved in e-resource retrieval. The next seven slides present an overview of the categories and examples of common errors of each type.​ The availability and openURL-testing literature contains some discussion of what constitutes an unavailable or erroneous resource. I chose to treat ILL requests as a normal part of the retrieval process, rather than as a failure of the library to obtain all items a user might need (something which is no longer possible even for libraries with the most comprehensive collection development policies) I also specified that each item must link directly to a screen providing HTML or PDF full text; screens such as the one pictured here where the link leads to a list of items could confuse students, so I counted it as an error.​</p>
 			</aside>
 			</section>
-			
+			<section>
+			<h2>Armacost Library failure points: P vs O</h2>
+			<p><img data-src="img/availability-failure-po.png" /></p>
+			<aside class="notes">
+			<p>A side-by-side comparison of causes for error in the print and online environments demonstrates the additional complexity of conducting research in an online environment. ​</p>
+			</aside>
+			</section>
+			<section>
+			<h2>Error details 1: Proxy errors</h2>
+			<p style="float:left;"><img data-src="availability-error-1.png" alt="Proxy error" /></p>
+			<p><ul>
+			<li>Domain missing from forward table</li>
+			<li>Domain missing from SSL certificate</li>
+			<li>Timeouts trying to establish connection</li>
+			</ul>
+			</p>
+			<aside class="notes">
+			<p>Failure can be localized to the proxy server because the full text target database’s domain is missing from the proxy server forward table, because the proxy server SSL certificate does not contain the full text target database domain, or because the proxy server slowed the connection significantly, causing the web browser to time out. User logins are another source of error (not tested in this study)​</p>
+			</aside>
+			</section>
 			</div>
 		</div>
 
