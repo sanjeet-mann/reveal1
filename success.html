@@ -29,7 +29,7 @@
 			  </section>
 			  <section>
 			  <h2>Availability studies</h2>
-			  <p>Defined as a research method replicating the steps that library users take from a citation to full text (or an error)</p>
+			  <p>Replicate the steps that library users take from a citation to full text (or an error)</p>
 			  <aside class="notes">
 			  <p>Availability studies are a research method that involves replicating the steps that library users take to go from a citation to full text (or an error). They use a sample to approximate the proportion of your entire library collection that is available in full text or generates an error. </p>
 			  </aside>
@@ -93,6 +93,36 @@
 			  <p>Used <i>100 Statistical Tests</i> by Gopal Kanji to determine that I could use the z test for difference of two proportions to see if the change in error rates was significant. The test looks at how much my results differ from the result we would expect if there really was no change in error rates. Z > 1.645 is statistically significant. The reduction in overall error rate is a VERY strong result so I can easily reject H0. No significant change in local availability rate so I would conclude that the troubleshooting steps I took did not make more items locally available. I also used Z tests to examine the change in error rates for each category of error to try to understand why I was or was not effective at fixing each category of error. </p>
 			  </aside>
 			  </section>
+			  <section>
+			  <h2>Troubleshooting proxy errors</h2>
+			  <p><img data-src="img/availability-success-results-proxy.png" alt="Z test results for proxy errors" /></p>
+			  <aside class="notes">
+			  <p>Proxy errors generally meant the e-journal’s domain was missing from the proxy forward table. Usually these were e-journals with a unique domain. The solution, adding the domain to the forward table, only took a few minutes and was entirely under my control. I had a statistically significant impact on the proxy error rate. </p>
+			  </aside>
+			  </section>
+			  <section>
+			  <h2>Troubleshooting source errors</h2>
+			  <p><img data-src="img/availability-success-results-source.png" alt="Z test results for source errors" /></p>
+			  <aside class="notes">
+			  <p>Source errors usually involve OpenURL metadata in the A&I database. There were a lot of these errors (8% of all items in my sample!) Sometimes very difficult to identify because the problem might not manifest until linking into a target database or placing an ILLIAD request. You have to look carefully at the OpenURL string before and after it enters the link resolver to determine if you have a source error. Source errors are also difficult to troubleshoot. I contact the database vendor each time I find an error, and they often need to forward the problem to a different unit, which may need to ask another party to fix the problem. It’s interesting to notice a trend in the 2013 study. In some situations where a library subscribes to both a full text and a citation-only database from the same publisher indexing the same item, the database inserts the PDF from the full text record into the record for the abstracting database, thus bypassing OpenURL linking entirely – and rendering source metadata errors a moot point.</p>
+			  </aside>
+			  </section>
+			  <section>
+			  <h2>Troubleshooting KB errors</h2>
+			  <p><img data-src="img/availability-success-results-kb.png" alt="Z test results for knowledge base errors" /></p>
+			  <aside class="notes">
+			  <p>Knowledge base errors usually involve collections that do not resolve down to the article level. In my experience students often assume the item is not available when they are not taken directly to the article so I count this situation as an error that needs to be improved (cf. Trainor and Price 2010 who also categorized browsing for results as an error)  The collections in our knowledgebase for “Freely Available” journals are not centrally managed and only resolve to the title level, so I couldn’t affect the overall error rate.</p>
+			  </aside>
+			  </section>
+			  <section>
+			  <h2>Troubleshooting resolver errors</h2>
+			  <p><img data-src="img/availability-success-results-resolver.png" alt="Z test results for link resolver errors" /></p>
+			  <aside class="notes">
+			  <p>Link resolver errors involve problems with the logic used to match items. For example, linking from the resolver result screen to the library catalog by title may match on multiple items or an incorrect item. We fixed problems by adding a prominent link to match on ISSN or ISBN instead. </p>
+			  </aside>
+			  </section>
+
+
 
 
 			  
