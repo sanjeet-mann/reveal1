@@ -159,7 +159,7 @@
 			<li>What is an error?</li>
 			<li>Six error categories</li>
 			<li>Updated criteria</li>
-			</ul></p></div>
+			</ul></p></div>	
 			<aside class="notes"><p>Error categories require judgment calls on the part of the investigator. Many errors (such as incorrect publisher metadata) are not evident at their point of origin, only detectable by problems that occur later in the retrieval process.​ I developed six error categories roughly matching the five systems involved in e-resource retrieval. The next seven slides present an overview of the categories and examples of common errors of each type.​ The availability and openURL-testing literature contains some discussion of what constitutes an unavailable or erroneous resource. I chose to treat ILL requests as a normal part of the retrieval process, rather than as a failure of the library to obtain all items a user might need (something which is no longer possible even for libraries with the most comprehensive collection development policies) I also specified that each item must link directly to a screen providing HTML or PDF full text; screens such as the one pictured here where the link leads to a list of items could confuse students, so I counted it as an error.​</p>
 			</aside>
 			</section>
@@ -172,70 +172,80 @@
 			</section>
 			<section>
 			<h2>Error details 1: Proxy errors</h2>
-			<p style="float:left; max-width:49%;"><img data-src="img/availability-error-1.png" alt="Proxy error" /></p>
+			<div class="column-left">
+			<p><img data-src="img/availability-error-1.png" alt="Proxy error" /></p></div>
+			<div class="column-right">
 			<p><ul>
 			<li>Domain missing from forward table</li>
 			<li>Domain missing from SSL certificate</li>
 			<li>Timeouts trying to establish connection</li>
-			</ul>
-			</p>
+			</ul></p></div>
 			<aside class="notes">
 			<p>Failure can be localized to the proxy server because the full text target database’s domain is missing from the proxy server forward table, because the proxy server SSL certificate does not contain the full text target database domain, or because the proxy server slowed the connection significantly, causing the web browser to time out. User logins are another source of error (not tested in this study)​</p>
 			</aside>
 			</section>
 			<section>
 			<h2>Error details 2: Source errors</h2>
-			<p class="float:left; max-width:49%;"><img data-src="img/availability-error-2.png" alt="Source error" /></p>
-			<p class="float:right; max-width:49%;"><ul>
+			<div class="column-left">
+			<p><img data-src="img/availability-error-2.png" alt="Source error" /></p></div>
+			<div class="column-right">
+			<p><ul>
 			<li>Missing metadata</li>
 			<li>Erroneous metadata (e.g. rft.date=0001-01-01)</li>
 			</ul></p>
+			</div>
 			<aside class="notes">
 			<p>The source A&I database can cause problems due to its interface design (not tested in this study) or because metadata are missing or erroneous. This can cause the link resolver to fail or delay the processing of ILL requests. Our ILL staff frequently need to verify requests with duplicate information in the article and journal title fields or nonsensical dates (e.g. “0001”). Libraries that have configured their ILL system to automatically send requests (e.g. ILLIAD Direct Request) will experience slower performance as erroneous requests are flagged by the system for human intervention.​</p>
 			</aside>
 			</section>
 			<section>
 			<h2>Error details 3: Knowledge base errors</h2>
-			<p style="float:left; max-width:49%;"><img data-src="img/availability-error-3.png" alt="Knowledge base error" /></p>
-			<p style="float:right; max-width:49%;"><ul>
+			<div class="column-left">
+			<p><img data-src="img/availability-error-3.png" alt="Knowledge base error" /></p></div>
+			<div class="column-right">
+			<p><ul>
 			<li>Title not selected in knowledge base</li>
 			<li>Title selected, but in poorly chosen collection</li>
 			<li>Knowledge base holdings do not reflect access entitlement (embargo, back issues, etc)</li>
-			</ul></p>
+			</ul></p></div>
 			<aside class="notes">
 			<p>Library staff are responsible for selecting titles and collections in knowledge bases that reflect their subscription entitlements. Errors occur if the entire title, or the starting and ending range of the library’s holdings of that title, are either selected when they shouldn’t be (“false positive” error) or not selected when they should be (“false negative” error). Sometimes the same title is listed in multiple collections; library staff must choose the collection with the most complete metadata or risk errors such as the missing article-level link illustrated here (the “SCELC Wiley-Blackwell Collection” lacked information necessary to achieve article level linking throughout the collection, while a different collection with the same titles contained that information)​ Publishers and knowledge base vendors can also contribute to problems at this stage, when a publisher does not notify the knowledge base vendor in a timely manner of publication changes, or when a knowledge base vendor does not accurately reflect the publisher’s embargo or other information pertaining to access. ​</p>
 			</aside>
 			</section>
 			<section>
 			<h2>Error details 4: Link resolver error</h2>
-			<p style="float:left; max-width:49%;"><img data-src="img/availability-error-4.png" alt="Link resolver error" /></p>
+			<div class="column-left">
+			<p><img data-src="img/avalability-error-4.png" alt="Link resolver error" /></p></div>
+			<div class="column-right">
 			<p><ul>
 			<li>Confusion between two similar titles</li>
 			<li>Unusual OpenURL syntax</li>
-			</ul></p>
+			</ul></p></div>
 			<aside class="notes">
 			<p>Link resolvers and target databases contributed relatively few errors in my study. Most link resolver errors involved a failure to draw a match between the requested citation and the item in the target resource. This could be due to idiosyncratic metadata or even to variation in libraries’ cataloging practices. In this example, an article from Costerus, a journal not held online, was then run as a catalog title search, which matched on an issue that had been cataloged as a serial monograph. (This problem is likely incomprehensible to our undergraduates)​</p>
 			</aside>
 			</section>
 			<section>
 			<h2>Error details 5: Target errors</h2>
-			<p style="float:left; max-width:49%;"><img data-src="img/availability-error-5.png" alt="Target database error" /></p>
-			<p style="float:left; max-width:49%;"><ul>
+			<div class="column-left">
+			<p><img data-src="img/availability-error-5.png" alt="Target database error" /></p></div>
+			<div class="column-right"><p><ul>
 			<li>Content not loaded (supplement, embargo)</li>
 			<li>Records concatenated from full text and non-full-text databases</li>
 			<li>Server downtime</li>
-			</ul></p>
+			</ul></p></div>
 			<aside class="notes">
 			<p>Target databases most commonly generated errors because of missing content (either because their publisher agreement forbids loading that content or because they had not notified the link resolver of an embargo). ​Interface issues represent another source of error not tested in my study. One provider’s tendency to concatenate records for the same item from multiple databases (one containing full text, one containing only an abstract) created problems when the full text record was consistently “hidden” in favor of the abstract-only record (which was consistently targeted by the link resolver)​</p>
 			</aside>
 			</section>
 			<section>
 			<h2>Error details 6: ILLIAD errors</h2>
-			<p style="float: left; max-width:49%;"><img data-src="img/availability-error-6.png" alt="ILL error" /></p>
-			<p style="float:right; max-width:49%;"><ul>
+			<div class="column-left">
+			<p><img data-src="img/availability-error-6.png" alt="ILL error" /></p></div>
+			<div class="column-right"><p><ul>
 			<li>Unicode metadata not displayed properly</li>
 			<li>rft.title used for both book title and article title (affects chapters and dissertations)</li>
-			</ul></p>
+			</ul></p></div>
 			<aside class="notes">
 			<p>Many errors manifested at the point of submitting an ILL request. Articles with foreign-language characters in the title did not display properly because the then-current version of ILLIAD did not support Unicode. (A subsequent upgrade fixed the problem). Also, when ILLIAD received an OpenURL that only used rft.title, it listed the field twice, in both journal name and article name. Our ILL staff frequently referred these issues to me because they were not sure which was the journal title (used to select the correct OCLC record to request)​</p>
 			</aside>
