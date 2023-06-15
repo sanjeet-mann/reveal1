@@ -315,6 +315,8 @@ div .column-right {		//Two-column format
 }
 
 div .csusb-footer {		//CSUSB footer logo
+	height:100px;
+	width:200px;
 	position:relative;
 	right:0;
 	bottom:0;
