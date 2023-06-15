@@ -315,7 +315,7 @@ div .column-right {		//Two-column format
 	width: 49%;
 }
 
-#csusb-footer img {
+div .csusb-footer {
 	content:url(img/csusb_logo_blue.png);
 	position:absolute;
 	right:0;
