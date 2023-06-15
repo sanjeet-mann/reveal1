@@ -29,8 +29,8 @@
 			  </section>
 			  <section>
 			  <h2>Armacost Library infrastructure</h2>
-			  <p><img style="float:left;" data-src="img/armacost-library-infrastructure.png" /></p>
-			  <p><ul>
+			  <p><img style="float:left; max-width:49%;" data-src="img/armacost-library-infrastructure.png" /></p>
+			  <p style="float:right; max-width:49%;"><ul>
 			  <li>ILLIAD interlibrary loan system</li>
 			  <li>Full text targets (databases, ejournals): 79,757 unique titles</li>
 			  <li>Serials Solutions 360 Link</li>
@@ -77,7 +77,7 @@
 			  <section>
 			    <h2>Development of the availability technique</h2>
 				<p style="float:left; max-width:49%;"><img data-src="img/availability-branching.png" /></p>
-				<p><ul>
+				<p style="float:right; max-width:49%;"><ul>
 				<li>Print material availability: Card catalog user surveys (Reviewed in Mansbridge 1986, Nisonger 2007)</li>
 				<li>Linear sequence (De Prospo 1973)</li>
 				<li>Branching model (Kantor 1976)</li>
@@ -90,7 +90,7 @@
 			  <section>
 			  <h2>OpenURL performance</h2>
 			  <p style="float:left; max-width:49%;"><img data-src="img/availability-csun.png" /></p>
-			  <p><ul>
+			  <p style="float:right; max-width:49%;"><ul>
 			  <li>OpenURL-based reasons for availability error (Wakimoto et al 1998)</li>
 			  <li>"Digging into the Data" on link resolver failure (Trainor and Price 2010)</li>
 			  <li>NISO initiatives: KBART, IOTA, PIE-J (Chandler et al 2011, Glasser 2012, Kasprowski 2012)</li>
@@ -102,7 +102,7 @@
 			<section>
 			<h2>Usability studies focusing on e-resources</h2>
 			<p style="float:left; max-width:49%;"><img data-src="img/availability-bgsu.png" /></p>
-			<p><ul>
+			<p style="float:right; max-width:49%;"><ul>
 			<li>Database link pages (Fry 2011, Ponsford et al 2011b)</li>
 			<li>Resolver menus (O'Neill 2009, Imler & Eichelberger 2011, Ponsford et al 2011a)</li>
 			<li>Discovery services (Williams & Foster 2011, Fagan et al 2012)</li>
@@ -164,8 +164,8 @@
 			</section>
 			<section>
 			<h2>Error details 2: Source errors</h2>
-			<p class="float:left; max-width:49%"><img data-src="img/availability-error-2.png" alt="Source error" /></p>
-			<p><ul>
+			<p class="float:left; max-width:49%;"><img data-src="img/availability-error-2.png" alt="Source error" /></p>
+			<p class="float:right; max-width:49%;"><ul>
 			<li>Missing metadata</li>
 			<li>Erroneous metadata (e.g. rft.date=0001-01-01)</li>
 			</ul></p>
@@ -176,7 +176,7 @@
 			<section>
 			<h2>Error details 3: Knowledge base errors</h2>
 			<p style="float:left; max-width:49%;"><img data-src="img/availability-error-3.png" alt="Knowledge base error" /></p>
-			<p><ul>
+			<p style="float:right; max-width:49%;"><ul>
 			<li>Title not selected in knowledge base</li>
 			<li>Title selected, but in poorly chosen collection</li>
 			<li>Knowledge base holdings do not reflect access entitlement (embargo, back issues, etc)</li>
@@ -199,7 +199,7 @@
 			<section>
 			<h2>Error details 5: Target errors</h2>
 			<p style="float:left; max-width:49%;"><img data-src="img/availability-error-5.png" alt="Target database error" /></p>
-			<p><ul>
+			<p style="float:left; max-width:49%;"><ul>
 			<li>Content not loaded (supplement, embargo)</li>
 			<li>Records concatenated from full text and non-full-text databases</li>
 			<li>Server downtime</li>
@@ -211,7 +211,7 @@
 			<section>
 			<h2>Error details 6: ILLIAD errors</h2>
 			<p style="float: left; max-width:49%;"><img data-src="img/availability-error-6.png" alt="ILL error" /></p>
-			<p><ul>
+			<p style="float:right; max-width:49%;"><ul>
 			<li>Unicode metadata not displayed properly</li>
 			<li>rft.title used for both book title and article title (affects chapters and dissertations)</li>
 			</ul></p>
@@ -237,17 +237,17 @@
 			<h2>Sampling</h2>
 			<p>Necessary sample size for a yes/no condition is determined by:</p>
 			<p>\[n=p(1-p)(\frac{z_c^2}{E^2})\]</p>
-			<div style="float:left;">
+			<div style="float:left; max-width:49%; border-right-width:2px;">
 			<p>To use this, you need:</p>
 			<p><ul><li>Availability rate from a small pre-test</li>
 			<li>Choose acceptable % confidence (95%)</li>
 			<li>Choose acceptable margin of error (+/- 5%)</li></ul></p>
 			</div>
-			<div style="float:right;">
+			<div style="float:right; max-width:49%;">
 			<p>Plug values into the formula...</p>
 			<p><ul><li>\(p\) = 0.625 (250/400 successes)</li>
 			<li>\(1-p\) = 0.375 (150/400 errors)</li>
-			<li>\(C\) = 0.95 (95% confidence</li>
+			<li>\(C\) = 0.95 (95% confidence)</li>
 			<li>\(z_c\) = 1.96 (statistical textbook or <a href="http://www.measuringusability.com/pcalcz.php" target="_blank">an online table</a></li>
 			<li>\(E\) = 0.05 (5% error)</li></ul></p>
 			</div>
@@ -259,8 +259,6 @@
 			<h2>Confidence</h2>
 			<p>Your confidence in a study of a particular sample sizes is given by:</p>
 			<p>\[z_c=E\sqrt{\frac{n}{p(1-p)}}\]</p>
-			<p></p>
-			<p></p>
 			<p>(rewritten from previous formula, plug in values as before)</p>
 			<p>Use table of areas under a standard normal curve to convert \(z_c\) to a confidence probability.</p>
 			<aside class="notes">
@@ -340,7 +338,7 @@
 			<p style="float:left; max-width:49%;">
 			<img data-src="img/availability-towards-testing-live-students.png" alt="Diagram of e-resource availability model" />
 			</p>
-			<p><ul>
+			<p style="float:right; max-width:49%;"><ul>
 			<li>More barriers</li>
 			<ul><li>confusing interfaces</li>
 			<li>difficulty formulating searches and evaluating sources</li>
