@@ -302,6 +302,21 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin: var(--r-block-margin) 0;
 }
 
+.reveal .slides section .column-left,
+.reveal .slides section > section .column-left {
+	float: left;
+	max-width: 49%;
+	border-right-color: var(--r-heading-color);
+	border-right-width: 2px;
+	border-right-style: solid;
+}
+
+.reveal section .column-right,
+.reveal .slides section > section .column-right {
+	float: right;
+	max-width: 49%;
+}
+
 /*********************************************
  * LINKS
  *********************************************/
