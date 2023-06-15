@@ -318,6 +318,7 @@ div .csusb-footer {		//CSUSB footer logo
 	height:100px;
 	width:200px;
 	position:relative;
+	float:right;
 	right:0;
 	bottom:0;
 }
