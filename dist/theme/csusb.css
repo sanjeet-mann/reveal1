@@ -304,21 +304,21 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin: var(--r-block-margin) 0;
 }
 
-div .column-left { 		//Two-column format
+div .column-left { 		/*Two-column format*/
 	float: left;
 	width: 49%;
 }
 
-div .column-right {		//Two-column format
+div .column-right {		/*Two-column format*/
 	float: right;
 	width: 49%;
 }
 
-div .csusb-footer {		//CSUSB footer logo
+div .csusb-footer {		/*CSUSB footer logo*/
 	width:200px;
 	position:relative;
 	float:right;	
-	content:url(img/csusb_logo_blue.png);
+	content:url(img/csusb_logo_blue.png);	
 }
 	
 
