@@ -1,9 +1,10 @@
 /*
  * Sanjeet's CSUSB theme for reveal.js. 
  *
- * 
+ *
+* <link rel="stylesheet" href="https://use.typekit.net/gng0bgq.css">
  */
-@import url(./fonts/source-sans-pro/source-sans-pro.css);
+@import url(https://use.typekit.net/gng0bgq.css);
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #fff;
 }
@@ -13,13 +14,13 @@ section.has-light-background, section.has-light-background h1, section.has-light
  *********************************************/
 :root {
   --r-background-color: #191919;
-  --r-main-font: Source Sans Pro, Helvetica, sans-serif;
+  --r-main-font: Myriad Pro, sans-serif;
   --r-main-font-size: 24px;
-  --r-main-color: #D2533C;
+  --r-main-color: #0065BD;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Source Sans Pro, Helvetica, sans-serif;
-  --r-heading-color: #D2533C;
+  --r-heading-font: Myriad Pro, sans-serif;
+  --r-heading-color: #0065BD;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: none;
@@ -31,17 +32,17 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #2a76dd;
-  --r-link-color-dark: #068de9;
-  --r-link-color-hover: #8dcffc;
-  --r-selection-background-color: rgba(66, 175, 250, 0.75);
+  --r-link-color: #E98300;
+  --r-link-color-dark: #773141;
+  --r-link-color-hover: #9E3039;
+  --r-selection-background-color: #808284;
   --r-selection-color: #fff;
 }
 
 .reveal-viewport {
   background: #fff;
   background-color: var(--r-background-color);
-  background-image: linear-gradient(180deg, rgb(147,162,153) 0%, #fff 8%);
+  background-image: linear-gradient(180deg, #0065BD 0%, #fff 8%);
 }
 
 .reveal {
@@ -304,20 +305,23 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin: var(--r-block-margin) 0;
 }
 
-.reveal .slides section .column-left,
-.reveal .slides section > section .column-left {
+div .column-left { 		//Two-column format
 	float: left;
-	max-width: 49%;
-	border-right-color: var(--r-heading-color);
-	border-right-width: 2px;
-	border-right-style: solid;
+	width: 49%;
 }
 
-.reveal section .column-right,
-.reveal .slides section > section .column-right {
+div .column-right {		//Two-column format
 	float: right;
-	max-width: 49%;
+	width: 49%;
 }
+
+#csusb-footer img {
+	content:url(img/csusb_logo_blue.png);
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+	
 
 /*********************************************
  * LINKS
