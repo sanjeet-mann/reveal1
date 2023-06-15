@@ -315,12 +315,10 @@ div .column-right {		//Two-column format
 }
 
 div .csusb-footer {		//CSUSB footer logo
-	height:100px;
 	width:200px;
 	position:relative;
-	float:right;
-	right:0;
-	bottom:0;
+	float:right;	
+	content:url(img/csusb_logo_blue.png);
 }
 	
 
