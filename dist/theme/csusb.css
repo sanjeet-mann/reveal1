@@ -314,6 +314,13 @@ div .column-right {		/*Two-column format*/
 	width: 49%;
 }
 
+div .threecolumn {   /*Three column format*/
+	float: left;
+	width: 33.33%;
+}
+
+
+
 div .csusb-footer {		/*CSUSB footer logo*/
 	height:100px;
 	width:200px;
